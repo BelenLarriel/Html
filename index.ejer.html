@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Ejericio</title>
+    <style>
+        p {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="identificador" class="tarjeta">Contenido Principal</div>
+    <div class="tarjeta">Otra seccion</div>
+    <div class="tarjeta">Seccion novedades</div>
+    <div class="tarjeta">Seccion destacados</div>
+
+    <p style="color: black;">You <em>have<div>M</div></em> to hurry up!</p>
+
+    <p>We <em>cannot</em> live like this.</p>
+
+    <script>
+
+function innerHTMLRandomNumber(id) {
+            let elemento = document.getElementById(id);
+            if (elemento) {
+                // Generar un número aleatorio entre 1 y 100
+                let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+                // Establecer el número aleatorio en el innerHTML del elemento
+                elemento.innerHTML = numeroAleatorio;
+            } else {
+                console.error('Elemento no encontrado con el ID:', id);
+            }
+        }
+
+        // Ejemplo de uso
+        innerHTMLRandomNumber("identificador");
+
+
+
+    </script>
+</body>
+</html>
