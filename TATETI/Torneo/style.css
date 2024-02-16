@@ -1,0 +1,21 @@
+/* Cambiar el color de las líneas de las columnas */
+.table .cell {
+    border: 1px solid whitesmoke; /* Puedes ajustar el color según tu preferencia */
+}
+
+/* Cambiar el color de las líneas de las filas */
+.table .row {
+    background-color: whitesmoke; /* Puedes ajustar el color según tu preferencia */
+}
+
+/* Para evitar que la última fila tenga un borde inferior */
+.table .row:last-child {
+    background-color: black;
+}
+
+
+h1 {
+    color: #3366cc; /* Cambia el color del texto a azul */
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
