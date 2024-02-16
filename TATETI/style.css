@@ -1,0 +1,48 @@
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px; /* Ajusta el valor según sea necesario para centrar verticalmente */
+    color: rgb(0, 87, 128); 
+}
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh; /* Ajusta el alto según sea necesario para centrar verticalmente */
+     background-color: brown;
+}
+
+
+
+
+
+
+
+td {
+    border: 6px solid black;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    background-color: aqua;
+}
