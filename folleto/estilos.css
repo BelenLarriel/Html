@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    border: 2px solid #ffffff;
+    width: 200px; /* ajusta según tu necesidad */
+    height: 200px; /* ajusta según tu necesidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    width: 100%; /* Centra el contenedor horizontalmente */
+}
+
+
+
+
+
+.frame {
+    position: absolute;
+    top: 10px; /* Ajusta según tu necesidad */
+    left: 10px; /* Ajusta según tu necesidad */
+    width: calc(100% - 20px); /* Ajusta según tu necesidad */
+    height: calc(100% - 20px); /* Ajusta según tu necesidad */
+    border: 2px solid #ffffff; /* Ajusta el color del marco */
+    box-sizing: border-box;
+    z-index: -1; /* Envía el marco al fondo */
+}
+
+
+
+
+
+.row {
+    display: flex;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    transition: border-color 0.3s, z-index 0.3s;
+}
+
+#imagen1 { background-image: url("fullmetal.jpg"); }
+#imagen2 { background-image: url("naruto.jpg"); }
+#imagen3 { background-image: url("hunter.jpg"); }
+#imagen4 { background-image: url("goku.jpg"); }
+#imagen5 { background-image: url("note.jpg"); }
+
+.container:hover .image:hover {
+    border: 2px solid red; /* Cambia el color que desees */
+    z-index: 1;
+}
+
+.container:hover .image:hover ~ .image {
+    opacity: 0; /* Oculta las imágenes después de la imagen seleccionada */
+}
+
+.row {
+    transform: rotate(45deg); /* Rota el contenedor de imágenes en diagonal */
+}
