@@ -1,0 +1,20 @@
+.encabezado {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    border: 2px solid #0056b3; /* Borde de 2px sólido con color azul más oscuro */
+}
+
+/* Estilos para las celdas de la tabla */
+.celda {
+    border: 1px solid #ddd; /* Borde de 1px sólido con color gris claro */
+    padding: 8px; /* Espaciado interno de 8px */
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    border: 1px solid #0056b3; /* Borde de 1px sólido con color azul más oscuro */
+    padding: 5px 10px; /* Espaciado interno de 5px arriba/abajo, 10px izquierda/derecha */
+}

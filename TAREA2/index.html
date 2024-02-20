@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src ="javascript.js"></script>
+
+
+    
+    </body>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+
+    
+
+    <div class="container">
+        <div  class="row mb-3">
+            
+                
+           <div class = "col-2">Version</div>
+           <div class = "col-2" >Fecha</div>
+           <div class ="col-2">Resumen</div>
+           <div class = "col-2">Archivos</div>
+           <div class = "col-2 ">Detalles</div>
+           <div class = "col-2">Configuracion</div>
+        </div>
+
+
+
+
+
+       
+          <div  class="row mb-3">
+                
+                    
+               <div class = "col-2 small">1.6.16</div>
+               <div class = "col-2 small" >01/05/2021</div>
+               <div class ="col-2 small">Esta versión introduce una interfaz de usuario renovada y mejoras significativas en el rendimiento.</div>
+
+               <div class = "col-2"> 
+              <button onclick="verArchivos('#archivosCollapse1')" class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver </button>
+               </div>
+
+                <div class = "col-2"> 
+                <button onclick="verDetalles('#detallesCollapse1')" class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver </button>
+                </div> 
+
+                <div class = "col-2"> 
+                <button onclick="verConfiguracion('#configuracionCollapse1')" class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver </button>
+            </div>
+          </div>
+
+
+            
+        
+        
+
+
+        
+               
+                  <div  class="row mb-3">
+                        
+                            
+                       <div class = "col-2 small">1.7.17</div>
+                       <div class = "col-2 small" >01/02/2022</div>
+                       <div class ="col-2 small">Esta actualización se centra en la corrección de errores y mejoras de estabilidad.</div>
+        
+                       <div class = "col-2"> 
+                      <button onclick="verArchivosdos('#archivosdosCollapse1')"class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                       </div>
+        
+                        <div class = "col-2"> 
+                        <button onclick="verDetallesdos('#detallesdosCollapse1')"  class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                        </div> 
+        
+                        <div class = "col-2"> 
+                    <button onclick="verconfiguraciondos('#configuraciondosCollapse1')" class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver </button>
+                    </div>
+                  </div> 
+        
+                      
+        
+               
+
+
+
+
+
+
+
+              
+                  <div  class="row mb-3">      
+                    <div class = "col-2 small">1.8.18</div>
+                    <div class = "col-2 small" >01/02/2023</div>
+                    <div class ="col-2 small">Trae consigo emocionantes nuevas funcionalidades, incluyendo la integración con servicios en la nube.</div>
+     
+                    <div class = "col-2"> 
+                   <button class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                    </div>
+     
+                     <div class = "col-2"> 
+                     <button class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                     </div> 
+     
+                     <div class = "col-2"> 
+                 <button class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                 </div>
+               </div> 
+      
+
+
+
+
+
+
+
+
+
+               <div  class="row mb-3">
+                        
+                            
+                <div class = "col-2 small">1.9.19</div>
+                <div class = "col-2 small" >01/02/2024</div>
+                <div class ="col-2 small">En esta versión, nos hemos centrado en la optimización del rendimiento</div>
+ 
+                <div class = "col-2"> 
+               <button class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                </div>
+ 
+                 <div class = "col-2"> 
+                 <button class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+                 </div> 
+ 
+                 <div class = "col-2"> 
+             <button class="btn btn-primary" data-toggle="modal" data-target="#archivosModal">Ver</button>
+             </div>
+           </div> 
+ 
+
+
+
+
+
+
+                    <!-- PRIMERO -->
+      <div class="container">     
+            
+           <div class="accordion" id="accordionExample">
+            <div class="card">
+           <div class="card-header" id="archivosHeading1">
+            <h2 class="mb-0">
+             <div class="col-2" id="versionButton1" style="display: none;">
+       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#archivosCollapse1" aria-expanded="true" aria-controls="archivosCollapse1">
+                                    Version 1.6.16
+                            
+                     
+            </button>
+                            
+             </h2>
+                    
+            </div>
+                        
+                     
+            <div id="archivosCollapse1" class="collapse" aria-labelledby="archivosHeading1" data-parent="#accordionExample">
+                            
+                            
+          
+            <div class="card-body">         
+            <!-- Contenido de archivos aquí -->       
+            <a href="#">Descargar v16.6.6 (archivo.zip)</a><br>  
+            <a href="#">Obtener la Versión 16.6.6 (instalador.exe)
+            </a><br>
+            <a href="#">Descargas Versión 16.6.6</a>
+             </div>
+             </div>
+             </div>
+
+
+
+
+
+
+                                  <!-- SEGUNDO -->
+
+
+
+            <div class="accordion" id="accordionExample">
+             <div class="card">
+                <div class="card-header" id="detallesHeading1"> 
+                <h2 class="mb-0">  
+                    <div class="col-2" id="versionButton2" style="display: none;">              
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#detallesCollapse1" aria-expanded="true" aria-controls="detallesCollapse1">
+                                        Version 1.6.16
+                                    
+                                        
+        
+                   
+                </button>         
+                </h2>        
+                </div>
+                
+                            <div id="detallesCollapse1" class="collapse" aria-labelledby="detallesHeading1" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    
+                             
+                <!-- Contenido de detalles aquí -->
+                                    
+                  
+                <a href="#">Detalles</a><br>
+                <a href="#">- Soporte mejorado </a><br>
+                 <a href="#"> - Optimización de la gestión de archivos temporales</a><br>
+                 <a href="#">- Mejora en el reconocimiento y manejo de hardware específico.</a><br>
+                                
+                </div>
+              </div>
+                        
+            </di>
+            
+         
+                
+                
+
+
+
+                                          <!-- TERCERO -->
+     
+                <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="configuracionHeading1"> 
+                    <h2 class="mb-0">  
+                        <div class="col-2" id="versionButton3" style="display: none;">              
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#configuracionCollapse1" aria-expanded="true" aria-controls="configuracionCollapse1">
+                                            Version 1.6.16
+                                        
+                                            
+            
+                       
+                    </button>         
+                    </h2>        
+                    </div>
+                    
+                                <div id="configuracionCollapse1" class="collapse" aria-labelledby="configuracionHeading1" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        
+                                 
+                    <!-- Contenido de detalles aquí -->
+                                        
+                      
+                    <a href="#">Configuraciones</a><br>
+                    <a href="#">- [Notas de Cambio (v2.0.0)](https://www.tuproyecto.com/docs/changelog/v2.0.0)
+                    </a><br>
+                     <a href="#"> - [Diferencias en el Archivo `main.js` (v3.1.2)]</a><br>
+                     <a href="#">- [Historial de Cambios Completo (v5.3.1)](https://www.tuproyecto.com/history/v5.3.0...v5.3.1)
+                    </a><br>
+                                    
+                    </div>
+                  </div>
+                            
+                </div>
+             
+
+
+
+
+
+                                         <!-- CUARTOO/SEGUNDO-->
+
+            <div class="accordion" id="accordionExample">
+            <div class="card">
+           <div class="card-header" id="archivosdosHeading1">
+            <h2 class="mb-0">
+            <div class="col-2" id="versionButton4" style="display: none;">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#archivosdosCollapse1" aria-expanded="true" aria-controls="archivosdosCollapse1">
+                                    Version 1.6.16
+                            
+                     
+            </button>
+                            
+             </h2>
+                    
+            </div>
+                        
+                     
+            <div id="archivosdosCollapse1" class="collapse" aria-labelledby="archivosdosHeading1" data-parent="#accordionExample">
+                            
+                            
+          
+            <div class="card-body">         
+            <!-- Contenido de archivos aquí -->       
+            <a href="#">Descargar v17.7.7 (archivo.zip)</a><br>  
+            <a href="#">Obtener la Versión 17.7.7 (instalador.exe)</a><br>
+            <a href="#">Descargas Versión 17.7.7</a>
+             </div>
+             </div>
+             </div>
+
+
+
+
+                                      <!-- QUINTO/SEGUNDO -->
+
+
+
+             <div class="accordion" id="accordionExample">
+              <div class="card">
+             <div class="card-header" id="detallesdosHeading1"> 
+            <h2 class="mb-0">  
+            <div class="col-2" id="versionButton5" style="display: none;">              
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#detallesdosCollapse1" aria-expanded="true" aria-controls="detallesdosCollapse1">
+           Version 1.6.16
+                                                               
+                                                                   
+                                   
+                                              
+              </button>         
+              </h2>        
+             </div>
+                                           
+         <div id="detallesdosCollapse1" class="collapse" aria-labelledby="detallesdosHeading1" data-parent="#accordionExample">
+            <div class="card-body">
+                                                               
+                                                        
+             <!-- Contenido de detalles aquí -->
+                                                               
+                                             
+             <a href="#">Detalles</a><br>
+             <a href="#">- Soporte mejorado </a><br>
+             <a href="#"> - Optimización de la gestión de archivos temporales</a><br>
+              <a href="#">- Mejora en el reconocimiento y manejo de hardware específico.</a><br>
+                                                           
+             </div>
+             </div>
+                                                   
+             </di>
+
+
+
+
+
+
+
+
+                          <!-- SEXTO/TERCERO -->
+
+
+
+
+
+
+          <div class="accordion" id="accordionExample">
+          <div class="card">
+          <div class="card-header" id="configuraciondosHeading1"> 
+          <h2 class="mb-0">  
+          <div class="col-2" id="versionButton6" style="display: none;">              
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#configuraciondosCollapse1" aria-expanded="true" aria-controls="configuraciondosCollapse1">
+           Version 1.6.16
+                                                    
+                                                        
+                        
+                                   
+          </button>         
+          </h2>        
+          </div>
+                                
+       <div id="configuraciondosCollapse1" class="collapse" aria-labelledby="configuraciondosHeading1" data-parent="#accordionExample">
+           <div class="card-body">
+                                                    
+                                             
+               <!-- Contenido de detalles aquí -->
+                                                    
+                                  
+          <a href="#">Configuraciones</a><br>
+         <a href="#">- [Notas de Cambio (v2.0.0)](https://www.tuproyecto.com/docs/changelog/v2.0.0)
+              </a><br>
+           <a href="#"> - [Diferencias en el Archivo `main.js` (v3.1.2)]</a><br>
+           <a href="#">- [Historial de Cambios Completo (v5.3.1)](https://www.tuproyecto.com/history/v5.3.0...v5.3.1)
+             </a><br>
+                                                
+              </div>
+               </div>
+                                        
+            </div>
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
